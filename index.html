@@ -40,6 +40,50 @@
 
         }
 
+        //A function that plays a single round of Rock Paper Scissors.
+        function playRound (playerSelection, computerSelection) {
+
+             /*If player choice beats computer choice, increment player's score and print winning message on console.
+            Or if player choice does not beat computer choice, increment computer's score and print losing message on console.
+            Otherwise, do not increment player's score and computer's score and print a tie message on console*/
+
+            if ((playerSelection === 'rock' && computerSelection === 'scissors') || (playerSelection === 'scissors' && computerSelection === 'paper') || (playerSelection === 'paper' && computerSelection === 'rock')) {
+    
+                //make playerScore increment (the increment equates to 2) and computerScore is still zero
+                newPlayerScore = ++playerScore;
+                newComputerScore = computerScore;
+    
+    
+
+                //Print player winnign message on console
+                return ("You win! Your score: " + newPlayerScore + " and Computer's score: " + newComputerScore) ;
+
+
+            } else if ((playerSelection === 'scissors' && computerSelection === 'rock') || (playerSelection === 'paper' && computerSelection === 'scissors') || (playerSelection === 'rock' && computerSelection === 'paper')) {
+
+                //make computerScore increment and playerScore is still zero
+                newComputerScore = ++computerScore;
+                newPlayerScore = playerScore;
+        
+    
+
+                //Print player losing message on console
+                return ("You lose! " + computerSelection + " beats " + playerSelection + ". Your score: " + newPlayerScore + " and Computer's score: " + newComputerScore);
+
+            } else {
+    
+                //keep computerScore and playerScore to zero
+                newComputerScore = computerScore;
+                newPlayerScore = playerScore;
+
+                //Print a tie message on console
+                return ("We're tied! Your score: " + newPlayerScore + " and Computer's score: " + newComputerScore);
+
+            }
+
+        }
+
+
 
 
         </script>
