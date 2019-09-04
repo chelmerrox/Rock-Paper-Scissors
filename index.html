@@ -25,6 +25,23 @@
              let numberOfGameRounds;
 
 
+
+             /*Function declarations*/
+        
+             //A function that will randomly return either 'Rock', 'Paper' or 'Scissors'. Using this function in the game makes the computer play
+             function computerPlay () {
+            
+            possibleComputerChoices = ["rock", "paper", "scissors"];
+            
+            computerChoiceIndex = Math.floor(Math.random() * possibleComputerChoices.length); //randomly generate a choice from the array and store in computerChoice variable
+            
+            computerChoice = possibleComputerChoices[computerChoiceIndex];
+            return computerChoice; //return the computerChoice as the value of this function
+
+        }
+
+
+
         </script>
     </body>
 </html>
