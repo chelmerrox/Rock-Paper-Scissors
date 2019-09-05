@@ -7,14 +7,14 @@
     <body>
         <!--JavaScript code within HTML-->
         <script>
-             <!--JavaScript code for Rock, Paper, Scissors Game demo within HTML-->
+            
+            //JavaScript code for Rock, Paper, Scissors Game demo within HTML
          
             /*Play the Game on the console tab of the web browser's developer tools. The game is going to play against the computer.*/
         
 
             /*Variable Declarations and assignments*/
 
-             //These are declared outside of functions, if...else etc. (as a global variable) since it should be accessed by other parts of the code
              let playerSelection;
              let possibleComputerChoices;
              let computerSelection;
@@ -35,7 +35,7 @@
             
                 possibleComputerChoices = ["rock", "paper", "scissors"];
             
-                computerChoiceIndex = Math.floor(Math.random() * possibleComputerChoices.length); //randomly generate a choice from the array and store in computerChoice variable
+                computerChoiceIndex = Math.floor(Math.random() * possibleComputerChoices.length); 
             
                 computerChoice = possibleComputerChoices[computerChoiceIndex];
                 return computerChoice; //return the computerChoice as the value of this function
@@ -45,9 +45,9 @@
             //A function that plays a single round of Rock Paper Scissors.
             function playRound (playerSelection, computerSelection) {
 
-                 /*If player choice beats computer choice, increment player's score and print winning message on console.
-                Or if player choice does not beat computer choice, increment computer's score and print losing message on console.
-                Otherwise, do not increment player's score and computer's score and print a tie message on console*/
+                 /*If player choice beats computer choice, increment player's score and return winning message on console.
+                Or if player choice does not beat computer choice, increment computer's score and return losing message on console.
+                Otherwise, do not increment player's score and computer's score and return a tie message on console*/
 
                 if ((playerSelection === 'rock' && computerSelection === 'scissors') || (playerSelection === 'scissors' && computerSelection === 'paper') || (playerSelection === 'paper' && computerSelection === 'rock')) {
     
@@ -55,25 +55,20 @@
                     newPlayerScore = ++playerScore;
                     newComputerScore = computerScore;
 
-                    //Print player winning message on console
                     return ("You win! Your score: " + newPlayerScore + " and Computer's score: " + newComputerScore) ;
 
                 } else if ((playerSelection === 'scissors' && computerSelection === 'rock') || (playerSelection === 'paper' && computerSelection === 'scissors') || (playerSelection === 'rock' && computerSelection === 'paper')) {
 
-                    //make computerScore increment and playerScore is still zero
                     newComputerScore = ++computerScore;
                     newPlayerScore = playerScore;
         
-                    //Print player losing message on console
                     return ("You lose! " + computerSelection + " beats " + playerSelection + ". Your score: " + newPlayerScore + " and Computer's score: " + newComputerScore);
 
                 } else {
-    
-                    //keep computerScore and playerScore to zero
+
                     newComputerScore = computerScore;
                     newPlayerScore = playerScore;
 
-                    //Print a tie message on console
                     return ("We're tied! Your score: " + newPlayerScore + " and Computer's score: " + newComputerScore);
 
                 }
@@ -91,19 +86,18 @@
             /*This is the code for the game itself. 5 rounds of the game will be played against the computer  i.e player vs computer.*/
             for (let gameRounds = 1; gameRounds <= 5; gameRounds++) {
             
-                //Asks question, player gives input and stores it in playerSelection variable
                 playerSelection = window.prompt("Let's play Rock, Paper, Scissors! Choose either one: ",);
         
                 playerSelection = playerSelection.toLowerCase();         //makes the input (a string) to lower case and store in the playerSelection variable
 
-                //If the value in the playerSelection variable is either 'rock or 'paper' or scissors, then execute the following code in order from top to bottom
+                //If the value in the playerSelection variable is either 'rock or 'paper' or 'scissors', then execute the following code in order from top to bottom
                 if ((playerSelection === 'rock') || (playerSelection === 'paper') || (playerSelection === 'scissors'))  {
                 
-                    computerSelection = computerPlay();                //generate a random choice for the computer by executing the code in the computerPlay() function and store in computerSelection
+                    computerSelection = computerPlay();                
 
-                    playRound(playerSelection, computerSelection);        //executes the code in the playRound(playerSelection, computerSelection) function
+                    playRound(playerSelection, computerSelection);        
 
-                    console.log("My choice: " + computerSelection);      //prints the computer's choice on console
+                    console.log("My choice: " + computerSelection);      
 
                     console.log(playRound(playerSelection, computerSelection));        //prints the winning/losing/tie message and the player's and computer's score on the console 
 
@@ -117,14 +111,14 @@
                     } 
                 }
 
-                    numberOfGameRounds = gameRounds;       //increment gameRounds and store in numberOfGameRounds variable
+                    numberOfGameRounds = gameRounds;       
         
             }
 
-            let totalPlayerScore = playerScore;           //Store the total of the player's score from the 5 rounds into the variable
-            let totalComputerScore = computerScore;         //Store the total of the player's score from the 5 rounds into the variable
+            let totalPlayerScore = playerScore;           
+            let totalComputerScore = computerScore;        
 
-            alert("Good Game! Here are our scores. Your score: " + totalPlayerScore + " and My score: " +  totalComputerScore);   //Print the total scores of the player and the computer after the 5th round of the game
+            alert("Good Game! Here are our scores. Your score: " + totalPlayerScore + " and My score: " +  totalComputerScore);   
 
 
         </script>
