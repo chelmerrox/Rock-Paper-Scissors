@@ -9,8 +9,6 @@ let possibleComputerChoices;
 let computerSelection;
 let playerScore = 0; 
 let computerScore = 0;
-let newPlayerScore;
-let newComputerScore;
 let computerChoice;
 let computerChoiceIndex;
 let numberOfGameRounds;
