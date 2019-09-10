@@ -14,7 +14,7 @@ choice has beaten the other's choice which would mean a win for the choice that 
 Rock beats Scissors, Paper beats Rock and Scissors beats Paper - all of which are combinations for a win. The inverse (for instance, Scissors against Rock) is a loss. A tie is when 
 the choices are the same (e.g Paper against Paper).
 
-*Every win accounts for 2 points, every loss for an obvious zero points and a tie accounts for no increments in the points of both player and computer.*
+*Every win accounts for a point, every loss for an obvious zero points and a tie accounts for no increments in the points of both player and computer.*
 
 It is certainly interactive and every message of a win/loss/tie along with the points are displayed on the console.
 
