@@ -102,3 +102,13 @@ function playRound (playerSelection, computerSelection) {
 
 }
 
+/*A function that prints the player's and computer's score after the fifth and last round*/
+function printFinalMessage () {
+
+     let totalPlayerScore = playerScore;           //Store the total of the player's score from the 5 rounds into the variable
+     let totalComputerScore = computerScore;         //Store the total of the player's score from the 5 rounds into the variable
+
+    return "Good Game! Here are our scores. Your score: " + totalPlayerScore + " and My score: " +  totalComputerScore;
+
+}
+
