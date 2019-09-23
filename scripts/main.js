@@ -11,7 +11,7 @@ let playerScore = 0;
 let computerScore = 0;
 let computerChoice;
 let computerChoiceIndex;
-let numberOfGameRounds;
+let numberOfGameRounds = 0;
 
 
 /*Function declarations*/
