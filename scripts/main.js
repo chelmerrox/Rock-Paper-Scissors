@@ -112,3 +112,28 @@ function printFinalMessage () {
 
 }
 
+
+
+do {           
+     playerSelection = window.prompt("Please choose either Rock, Paper or Scissors: ",);
+     playerSelection= playerSelection.toLowerCase();
+
+     choiceValid = checkChoice(playerSelection);
+
+     if (choiceValid) {
+       
+         if (numberOfGameRounds < 5) {
+       
+             game();
+       
+         } else {
+       
+             finalMessage = printFinalMessage();
+             
+             alert(finalMessage);
+
+             break;
+         }
+  }
+
+ } while ((playerSelection !== 'rock') || (playerSelection !== 'paper') || (playerSelection !== 'scissors'));
