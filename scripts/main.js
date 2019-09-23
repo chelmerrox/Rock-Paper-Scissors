@@ -12,6 +12,8 @@ let computerScore = 0;
 let computerChoice;
 let computerChoiceIndex;
 let numberOfGameRounds = 0;
+let choiceValid = false;
+let finalMessage;
 
 
 /*Function declarations*/
@@ -27,7 +29,8 @@ function askChoice () {
       return playerChoice;
   }
 
-  
+
+
        
 //A function that will randomly return either 'Rock', 'Paper' or 'Scissors'. 
 //Using this function in the game makes the computer play
