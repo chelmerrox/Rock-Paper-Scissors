@@ -29,7 +29,12 @@ function askChoice () {
       return playerChoice;
   }
 
-
+/*A function that checks that the player's choice is rock/paper/scissors*/
+function checkChoice(selection) {
+     if ((playerSelection === 'rock') || (playerSelection === 'paper') || (playerSelection === 'scissors'))
+         return true;
+         return false;
+ }
 
        
 //A function that will randomly return either 'Rock', 'Paper' or 'Scissors'. 
