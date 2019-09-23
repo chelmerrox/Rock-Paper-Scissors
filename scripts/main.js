@@ -65,48 +65,19 @@ function playRound (playerSelection, computerSelection) {
 
 }
 
+ /*A function that executes all code that plays the game and keeps count of the number of rounds played*/
+ function game() {
+     computerSelection = computerPlay();                //generate a random choice for the computer by executing the code in the computerPlay() function and store in computerSelection
 
+     var message = playRound(playerSelection, computerSelection);        //executes the code in the playRound(playerSelection, computerSelection) function
 
+     console.log("My choice: " + computerSelection);      //prints the computer's choice on console
 
+     console.log(message);        //prints the winning/losing/tie message and the player's and computer's score on the console 
 
+     numberOfGameRounds++;
 
+     console.log("Round: " + numberOfGameRounds);  
 
+}
 
-
-/*This is the code for the game itself. 5 rounds of the game will be played against the computer  i.e player vs computer.*/
-for (let gameRounds = 1; gameRounds <= 5; gameRounds++) {
-           
-     playerSelection = window.prompt("Let's play Rock, Paper, Scissors! Choose either one: ",);
-       
-     playerSelection = playerSelection.toLowerCase();         //makes the input (a string) to lower case and store in the playerSelection variable
-
-     //If the value in the playerSelection variable is either 'rock or 'paper' or 'scissors', 
-     //then execute the following code in order from top to bottom
-     if ((playerSelection === 'rock') || (playerSelection === 'paper') || (playerSelection === 'scissors'))  {
-               
-         computerSelection = computerPlay();                
-
-         let message = playRound(playerSelection, computerSelection);        
-
-         console.log("My choice: " + computerSelection);      
-
-         console.log(message);        //prints the winning/losing/tie message and the player's and computer's score on the console 
-
-    } else {         //Otherwise, when value of playerSelection is either empty or when the string is not equal to 'rock/paper/scissors' or when value is not a string, then execute code below
-
-         //keep repeating the code below  (asking for the correct input) until the right input is being entered - not finished yet with this part of the code
-         while ((playerSelection !== 'rock') || (playerSelection !== 'paper') || (playerSelection !== 'scissors')); {
-                   
-             playerSelection = window.prompt("Please choose either Rock, Paper or Scissors: ",);
-
-         } 
-     }
-
-     numberOfGameRounds = gameRounds;       
-       
- }
-
- let totalPlayerScore = playerScore;           
- let totalComputerScore = computerScore;        
-
- alert("Good Game! Here are our scores. Your score: " + totalPlayerScore + " and My score: " +  totalComputerScore);   
