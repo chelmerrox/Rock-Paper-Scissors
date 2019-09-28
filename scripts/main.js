@@ -115,8 +115,7 @@ function printFinalMessage () {
 
 
 do {           
-     playerSelection = window.prompt("Please choose either Rock, Paper or Scissors: ",);
-     playerSelection= playerSelection.toLowerCase();
+     playerSelection = askChoice();
 
      choiceValid = checkChoice(playerSelection);
 
