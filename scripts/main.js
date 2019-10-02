@@ -113,7 +113,19 @@ function convertNumberToString() {
 
  }
 
- 
+ function playGame(){
+     
+     computerSelection = computerPlay();
+
+     message = playRound(playerSelection, computerSelection);
+
+     convertNumberToString();
+
+     printNumericText();
+
+     printMessage();
+
+ }
  
 
 /*A function that prints the player's and computer's score after the fifth and last round*/
