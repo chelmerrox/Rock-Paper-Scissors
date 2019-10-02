@@ -141,6 +141,18 @@ function convertNumberToString() {
  }
  
 
+ //shows the Play Again button that starts the game over when clicked
+ function playAgain () {
+    
+     const reloadGameButton = document.createElement('a');
+     reloadGameButton.setAttribute('href', 'C:\UbuntuShare_1\odin_projects_on_windows_10\Rock Paper Scissors game demo');
+     reloadGameButton.setAttribute('id', 'play-again');
+     reloadGameButton.textContent = "Play again ";
+
+     return reloadGameButton;
+ }
+
+ 
 /*A function that prints the player's and computer's score after the fifth and last round*/
 function printFinalMessage () {
 
