@@ -30,7 +30,7 @@ let message;
  const displayMessage = document.getElementById('message');
  const finalMessage = document.getElementById('finalmessage');
 
- 
+
 
  /*Function declarations*/
 
@@ -86,6 +86,15 @@ function playRound (playerSelection, computerSelection) {
 
 }
 
+//converts the numeric values of game rounds, player's score and computer's score to a numeric string
+function convertNumberToString() {
+
+     gameRoundsString = numberOfGameRounds.toString();
+
+     playerScoreString = playerScore.toString();
+
+     computerScoreString = computerScore.toString();
+ }
  
 
 /*A function that prints the player's and computer's score after the fifth and last round*/
