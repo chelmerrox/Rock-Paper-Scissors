@@ -177,3 +177,17 @@ function printFinalMessage () {
 
 
 
+
+rock_id.addEventListener('click', function(e){
+         
+     playerSelection = 'rock';
+     
+     console.log(e.currentTarget);
+
+     numberOfGameRounds++;
+
+     playGame();
+
+     checkGameRounds();
+
+ });
