@@ -192,11 +192,26 @@ rock_id.addEventListener('click', function(e){
 
  });
 
- 
+
  paper_id.addEventListener('click', function(e){
          
      playerSelection = 'paper';
      
+     console.log(e.currentTarget);
+
+     numberOfGameRounds++;
+
+     playGame();
+
+     checkGameRounds();
+
+ });
+
+
+ scissors_id.addEventListener('click', function(e){
+         
+     playerSelection = 'scissors';
+
      console.log(e.currentTarget);
 
      numberOfGameRounds++;
