@@ -126,6 +126,7 @@ function convertNumberToString() {
 
  }
 
+ //plays the game after player makes their choice
  function playGame(){
      
      computerSelection = computerPlay();
