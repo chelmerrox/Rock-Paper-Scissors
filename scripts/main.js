@@ -152,7 +152,18 @@ function convertNumberToString() {
      return reloadGameButton;
  }
 
+ //prints the final message of the player or computer winning/losing/a tie after 5 rounds of the game
+ function checkGameRounds(){
  
+     if (numberOfGameRounds === 5) {
+
+        finalMessage.textContent = printFinalMessage();
+
+        playAgain();
+    }
+}
+
+
 /*A function that prints the player's and computer's score after the fifth and last round*/
 function printFinalMessage () {
 
