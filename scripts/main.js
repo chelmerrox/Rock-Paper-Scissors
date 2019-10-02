@@ -23,7 +23,9 @@ let message;
  const paper_id = document.getElementById('paper');
  const scissors_id = document.getElementById('scissors');
 
-
+ const rounds_span = document.getElementById('game-rounds');
+ const playerScoreDisplay = document.getElementById('playerscoredisplay');
+ const computerScoreDisplay = document.getElementById('computerscoredisplay');
 
  /*Function declarations*/
 
