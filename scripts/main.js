@@ -17,23 +17,7 @@ let numberOfGameRounds = 0;
 
 /*Function declarations*/
 
-/*A function that asks for player's choice and changes string input to lower case*/
-function askChoice () {
-             
-     //Asks question, player gives input and stores it in playerSelection variable
-      let playerChoice= window.prompt("Let's play Rock, Paper, Scissors! Choose either one: ",);
 
-      playerChoice= playerChoice.toLowerCase();         //makes the input (a string) to lower case and store in the playerSelection variable
-
-      return playerChoice;
-  }
-
-/*A function that checks that the player's choice is rock/paper/scissors*/
-function checkChoice(selection) {
-     if ((playerSelection === 'rock') || (playerSelection === 'paper') || (playerSelection === 'scissors'))
-         return true;
-         return false;
- }
 
        
 //A function that will randomly return either 'Rock', 'Paper' or 'Scissors'. 
