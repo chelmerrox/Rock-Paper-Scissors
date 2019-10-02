@@ -1,0 +1,167 @@
+/*CSS Styles and positioning of the Rock, Paper, Scissors game*/
+
+body {
+    background: white;
+    margin: 0;
+    padding: 10px;
+    position: static;
+}
+
+#container-1 {
+    margin: 150px 300px -40px 500px;
+    border: 4px rgb(51, 99, 128) solid;
+    border-radius: 35px;
+    padding: 35px 200px;
+    background-image: url("../images/background-2.jpg");
+    background-color: rgb(253, 145, 163);
+    position: absolute;
+    color: black;
+    font-weight: 1000px;
+    box-shadow: 1px 1px 30px;
+}
+
+#title, #instruction {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-style: italic;
+    text-shadow: 0 0 13px;
+}
+
+#title {
+    text-align: inherit;
+}
+
+
+
+#container-2 {
+    margin: 600px 400px 0 200px;
+    border: 4px rgb(51, 99, 128) solid;
+    border-radius: 100px;
+    padding: 90px 500px 100px 500px;
+    background-image: url("../images/background-2.jpg");
+    box-shadow: 1px 1px 10px;
+    
+}
+
+/*has the rock and paper buttons*/
+.subcontainers-of-2-1 { 
+    display: inline-block;
+}
+
+img[src="images/rock.jpg"], img[src="images/paper.jpg"], img[src="images/scissors.png"]{
+    border-radius: 100px;
+}
+
+#rock {
+    margin-left: -300px;
+    border-radius: 100px;
+    outline: none;
+}
+ #rock:hover, #paper:hover, #scissors:hover {
+     background-color: rgb(253, 145, 163);
+     box-shadow: 1px 1px 10px;
+     transform: rotateZ(60deg);
+     transform-style: preserve-3d;
+ }
+
+#paper {
+     margin-left: 90px;
+     margin-top: -300px;
+     border-radius: 100px;
+     outline: none;
+}
+
+/*has the rounds, scores and results messages */
+.subcontainer-2-2 {
+    border: 3px grey solid;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: -200px;
+    padding: 100px 400px 600px 100px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    color: grey;
+    box-shadow: 1px 1px 10px;
+}
+
+.subcontainer-2-2:hover {
+   border-color: rgb(51, 99, 128);
+   background-color: white;
+   color: black;
+}
+
+#rounds {
+    padding-top: 2px;
+    position: relative;
+    left: 50px;
+}
+
+#game-rounds {
+    position: relative;
+    top: -21px;
+    left: 100px;
+
+}
+
+#playerscore, #computerscore {
+    position: relative;
+    left: 50px;
+}
+
+#playerscoredisplay {
+    position: relative;
+    top: -33px;
+    left: 100px;
+}
+
+#computerscoredisplay {
+    position: relative;
+    top: -32px;
+    left: 144px;
+}
+
+#message {
+    color: rgb(207, 81, 102);
+    font-style: italic;
+    position: relative;
+    left: 150px;
+}
+
+#message:hover, #finalmessage:hover {
+    color: teal;
+}
+
+#finalmessage {
+    color: rgb(207, 81, 102);
+    font-style: italic;
+    position: relative;
+    left: 150px;
+    font-size: 20px;
+}
+
+#scissors {
+    border-radius: 100px; 
+    outline: none;
+    margin-left: -100px;
+    margin-top: 100px;
+}
+
+#container-3 {
+    margin: 100px 0 0 0;
+    background-color: rgb(199, 193, 193);
+    padding: 20px;
+    position: static;
+}
+
+i, #author {
+    display: inline-block;
+    position: relative;
+    left: 600px;
+    color: grey;
+}
+
+#author {
+    top: -6px;
+}
