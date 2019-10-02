@@ -191,3 +191,18 @@ rock_id.addEventListener('click', function(e){
      checkGameRounds();
 
  });
+
+ 
+ paper_id.addEventListener('click', function(e){
+         
+     playerSelection = 'paper';
+     
+     console.log(e.currentTarget);
+
+     numberOfGameRounds++;
+
+     playGame();
+
+     checkGameRounds();
+
+ });
