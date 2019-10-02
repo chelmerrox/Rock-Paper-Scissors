@@ -105,6 +105,15 @@ function convertNumberToString() {
 
      computerScoreDisplay.textContent = computerScoreString;
  }
+
+ //prints the message of a win/loss/tie in each round till the 5th and last round
+ function printMessage() {
+
+     displayMessage.textContent = message;
+
+ }
+
+ 
  
 
 /*A function that prints the player's and computer's score after the fifth and last round*/
