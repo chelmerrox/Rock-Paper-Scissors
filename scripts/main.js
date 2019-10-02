@@ -27,6 +27,11 @@ let message;
  const playerScoreDisplay = document.getElementById('playerscoredisplay');
  const computerScoreDisplay = document.getElementById('computerscoredisplay');
 
+ const displayMessage = document.getElementById('message');
+ const finalMessage = document.getElementById('finalmessage');
+
+ 
+
  /*Function declarations*/
 
 
