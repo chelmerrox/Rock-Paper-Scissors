@@ -13,9 +13,17 @@ let computerChoice;
 let computerChoiceIndex;
 let numberOfGameRounds = 0;
 
+let message;
+
+ let gameRoundsString = "";
+ let playerScoreString = "";
+ let computerScoreString = "";
 
 
-/*Function declarations*/
+
+
+
+ /*Function declarations*/
 
 
 
