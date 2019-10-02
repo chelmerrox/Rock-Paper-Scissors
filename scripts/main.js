@@ -19,7 +19,9 @@ let message;
  let playerScoreString = "";
  let computerScoreString = "";
 
-
+ const rock_id = document.getElementById('rock');
+ const paper_id = document.getElementById('paper');
+ const scissors_id = document.getElementById('scissors');
 
 
 
