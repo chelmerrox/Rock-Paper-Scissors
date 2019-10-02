@@ -1,6 +1,6 @@
- //JavaScript code for Rock, Paper, Scissors Game demo 
+ //JavaScript code for Rock, Paper, Scissors Game  
          
-/*Play the Game on the console tab of the web browser's developer tools. The game is going to play against the computer.*/
+/*The player is going to play against the computer.*/
         
  /*Variable Declarations and assignments*/
 
