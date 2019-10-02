@@ -69,21 +69,7 @@ function playRound (playerSelection, computerSelection) {
 
 }
 
- /*A function that executes all code that plays the game and keeps count of the number of rounds played*/
- function game() {
-     computerSelection = computerPlay();                //generate a random choice for the computer by executing the code in the computerPlay() function and store in computerSelection
-
-     var message = playRound(playerSelection, computerSelection);        //executes the code in the playRound(playerSelection, computerSelection) function
-
-     console.log("My choice: " + computerSelection);      //prints the computer's choice on console
-
-     console.log(message);        //prints the winning/losing/tie message and the player's and computer's score on the console 
-
-     numberOfGameRounds++;
-
-     console.log("Round: " + numberOfGameRounds);  
-
-}
+ 
 
 /*A function that prints the player's and computer's score after the fifth and last round*/
 function printFinalMessage () {
