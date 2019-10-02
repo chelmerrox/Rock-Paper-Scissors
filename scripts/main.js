@@ -51,40 +51,53 @@ function computerPlay () {
 
 }
 
-//A function that plays a single round of Rock Paper Scissors.
-function playRound (playerSelection, computerSelection) {
+ //A function that plays a single round of Rock Paper Scissors.
+ function playRound (playerSelection, computerSelection) {
 
-     /*If player choice beats computer choice, increment player's score and return winning message on console.
-    Or if player choice does not beat computer choice, increment computer's score and return losing message on console.
-    Otherwise, do not increment player's score and computer's score and return a tie message on console*/
+     /*If player choice beats computer choice, increment player's score and print winning message on console.
+         Or if player choice does not beat computer choice, increment computer's score and print losing message on console.
+            Otherwise, do not increment player's score and computer's score and print a tie message on console*/
 
-    if ((playerSelection === 'rock' && computerSelection === 'scissors') || 
-        (playerSelection === 'scissors' && computerSelection === 'paper') || 
-        (playerSelection === 'paper' && computerSelection === 'rock')) {
-   
-         //make playerScore increment and computerScore is still zero
-         playerScore++;
+    if (
+          (playerSelection === 'rock' && computerSelection === 'scissors') || 
+             (playerSelection === 'scissors' && computerSelection === 'paper') || 
+                 (playerSelection === 'paper' && computerSelection === 'rock')
+    ) {
+    
+                //make playerScore increment and computerScore is still zero
+                playerScore++;
+    
+                playerSelection = playerSelection.toUpperCase();
+                computerSelection = computerSelection.toUpperCase();
 
-         return ("You win! Your score: " + playerScore + " and Computer's score: " + computerScore) ;
+                //Print player winnign message on console
+                return ("You win! " + playerSelection + " beats " + computerSelection) ;
 
-    } else if ((playerSelection === 'scissors' && computerSelection === 'rock') ||
-               (playerSelection === 'paper' && computerSelection === 'scissors') || 
-               (playerSelection === 'rock' && computerSelection === 'paper')) {
 
-         computerScore++;
-       
-         return ("You lose! " + computerSelection + " beats " + playerSelection + ". Your score: " + playerScore + " and Computer's score: " + computerScore);
+    } else if (
+                (playerSelection === 'scissors' && computerSelection === 'rock') || 
+                    (playerSelection === 'paper' && computerSelection === 'scissors') || 
+                        (playerSelection === 'rock' && computerSelection === 'paper')
+    ) {
+
+                //make computerScore increment and playerScore is still zero
+                computerScore++;
+        
+                playerSelection = playerSelection.toUpperCase();
+                computerSelection = computerSelection.toUpperCase();
+
+                //Print player losing message on console
+                return ("You lose! " + computerSelection + " beats " + playerSelection);
 
     } else {
+    
 
-         computerScore;
-         playerScore;
+                        //Print a tie message on console
+                        return ("Oh! We're tied!");
 
-         return ("We're tied! Your score: " + playerScore + " and Computer's score: " + computerScore);
+    }       
 
-    }
-
-}
+}   
 
 //converts the numeric values of game rounds, player's score and computer's score to a numeric string
 function convertNumberToString() {
