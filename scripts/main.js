@@ -95,6 +95,16 @@ function convertNumberToString() {
 
      computerScoreString = computerScore.toString();
  }
+
+ //prints the numeric strings of game rounds, player's score and computer's score onto the web page
+ function printNumericText() {
+    
+     rounds_span.textContent = gameRoundsString;
+
+     playerScoreDisplay.textContent = playerScoreString;
+
+     computerScoreDisplay.textContent = computerScoreString;
+ }
  
 
 /*A function that prints the player's and computer's score after the fifth and last round*/
