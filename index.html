@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
     <body>
-        <!--JavaScript code within HTML-->
-        <script src="scripts/main.js"></script>
+            <!--Container 1-->
+        <div id="container-1">
+            
+            <!--Sub-container 1 of 1-->
+            <div class="subcontainer-1-1">
+                <p id="title">ROCK, PAPER, SCISSORS</p>
+            </div>
+
+            <!--Sub-container 2 of 1-->
+            <div class="subcontainer-2-1">
+                <p id="instruction">Click on any of the three buttons to play a 5 round game against the computer.</p>
+            </div>
+
+        </div>
+
+        <!--Container 2-->
+        <div id="container-2">
+
+            <!--Sub-container 1 of 2-->
+            <div class="subcontainer-2-1">
+                
+                <!--Sub-container 1.1 of 2-->
+                <div class="subcontainers-of-2-1">
+                    <button type="submit" class="buttons" id="rock" data-choice="1"><img src="images/rock.jpg" width="200" height="200" alt="Rock"></button>
+                </div> 
+
+                <!--Sub-container 1.2 of 2-->
+                <div class="subcontainers-of-2-1">
+                    <button type="submit" class="buttons" id="paper" data-choice="2"><img src="images/paper.jpg" width="200" height="200" alt="Paper"></button>
+                </div>
+
+            </div>
+
+            <!--Sub-container 2 of 2-->
+            <div class="subcontainer-2-2">
+                 <p id="rounds">Round: <span id="game-rounds"> </span></p>
+                
+                 <p id="playerscore"> Your score: <span id="playerscoredisplay"> </span></p>
+                 <p id="computerscore">Computer's Score: <span id="computerscoredisplay"> </span></p>
+                
+                 <p id="message"></p>
+                 <p id="finalmessage"></p>
+            </div> 
+
+            <!--Sub-container 3 of 2-->
+            <div class="subcontainer-2-3">
+                <button type="submit" class="buttons" id="scissors" data-choice="3"><img src="images/scissors.png"  width="200" height="200" alt="Scissors"></button>
+            </div>
+
+
+        </div>
+
+        <!--Container 3-->
+        <div id="container-3">
+            <i class="material-icons">&#xe90c;</i><p id="author">chelmerrox</p>
+        </div>
 
     </body>
 </html>
