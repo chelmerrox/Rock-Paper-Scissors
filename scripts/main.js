@@ -12,8 +12,7 @@ let computerScore = 0;
 let computerChoice;
 let computerChoiceIndex;
 let numberOfGameRounds = 0;
-let choiceValid = false;
-let finalMessage;
+
 
 
 /*Function declarations*/
