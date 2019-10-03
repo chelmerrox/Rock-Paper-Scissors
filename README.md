@@ -20,20 +20,20 @@ It is certainly interactive and every message of a win/loss/tie along with the p
 
 ## Preview of the game 
 
-![Rock-Paper-Scissors-title](images/heading.png)
+![Rock-Paper-Scissors-title](images/heading-1.png)
 
 
 
 
 
 
-![Rock-Paper-Scissors-game](images/game-ui-top.png)
+![Rock-Paper-Scissors-game](images/game-ui-top-1.png)
 
 
 
 
 
-![Rock-Paper-Scissors-game](images/game-ui-bottom.png)
+![Rock-Paper-Scissors-game](images/game-ui-bottom-2.png)
 
 
 ## How to play the game on the web page
