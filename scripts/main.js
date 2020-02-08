@@ -143,7 +143,7 @@ function convertNumberToString() {
  
 
  //shows the Play Again button that starts the game over when clicked
- function playAgain () {
+/*  function playAgain () {
     
      const reloadGameButton = document.createElement('a');
      reloadGameButton.setAttribute('href', 'C:\UbuntuShare_1\odin_projects_on_windows_10\Rock Paper Scissors game demo');
@@ -151,7 +151,7 @@ function convertNumberToString() {
      reloadGameButton.textContent = "Play again ";
 
      return reloadGameButton;
- }
+ } */
 
  //prints the final message of the player or computer winning/losing/a tie after 5 rounds of the game
  function checkGameRounds(){
@@ -164,7 +164,7 @@ function convertNumberToString() {
         computerScore = 0;
 
         convertNumberToString();
-        playAgain();
+        /* playAgain(); */
     }
 }
 
