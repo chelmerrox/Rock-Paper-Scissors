@@ -40,10 +40,7 @@ It is certainly interactive and every message of a win/loss/tie along with the p
 
 On the web page:
 
-1. Click on any of the three buttons. Rock image embedded on the button is for choosing rock etc.
-
-2. Click on the 'Play Again' buttton if you want to play another 5 rounds of the game. 
-   **NOTE: The 'Play Again' button only shows up after playing 5 rounds of the game.**
+1. Click on any of the three buttons for your choice. Rock image embedded on the button is for choosing rock etc.
 
 ## Play the game on my web page
 
