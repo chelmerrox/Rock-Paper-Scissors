@@ -159,7 +159,11 @@ function convertNumberToString() {
      if (numberOfGameRounds === 5) {
 
         finalMessage.textContent = printFinalMessage();
+        numberOfGameRounds = 0;
+        playerScore = 0;
+        computerScore = 0;
 
+        convertNumberToString();
         playAgain();
     }
 }
